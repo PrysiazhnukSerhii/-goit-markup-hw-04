@@ -174,12 +174,15 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
+
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../image/hero.jpg);
   background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 1600px 600px;
 }
 
 .hero-title {
@@ -259,9 +262,11 @@ body {
 }
 
 .feature-icon-box {
+  display: flex;
+  justify-content: center;
   background-color: var(--gray-background-color);
   border-radius: 4px;
-  padding: 25px 100px;
+  padding: 25px;
 }
 
 .feature-icon {
@@ -301,6 +306,7 @@ body {
   font-size: 16px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .team-container {
@@ -315,6 +321,7 @@ body {
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .list-social-networks {
@@ -323,8 +330,11 @@ body {
 }
 
 .link-social-networks {
-  display: block;
-  padding: 12px;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
   fill: var(--social-image-color);
 }
 
@@ -366,17 +376,20 @@ body {
 }
 
 .link-client-company {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
   border: 1px solid var(--social-image-color);
   border-radius: 4px;
+  fill: var(--social-image-color);
 }
 
 .link-client-company:hover,
 .link-client-company:focus {
   border: 1px solid var(--accent-colot);
+  fill: var(--accent-colot);
 }
 
 .icon-client-company {
@@ -458,10 +471,11 @@ body {
 }
 
 .footer-icon {
-  background-color: #686970;
+  background-color: #44454e;
   fill: var(--white-color);
   border-radius: 50%;
 }
+
 /*-----------------  portfolio----------------- */
 
 /*-------------------- button------------------- */
